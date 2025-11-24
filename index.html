@@ -33,7 +33,40 @@
 
     <main>
       <section id="hero" class="section hero">
-        <h1>Placeholder</h1>
+        <h1>Logg inn</h1>
+        <!-- 
+          Innlogging:
+          - Et element for epost
+          - Et element for passord
+          - Avkryssning for husk meg
+          - Avkryssning for vis passord
+          - Knapp for å bearbeide dataen
+         -->
+         <form>
+          <label for="userEmail" class="block">
+            E-post:
+            <input type="email" name="userEmail" id="userEmail" placeholder="ola@nordmann.no">
+          </label>
+
+          <label for="userPassword" class="block">
+            Passord:
+            <input type="password" name="userPassword" id="userPassword">
+          </label>
+
+          <div class="checkboxContainer">
+            <label for="rememberMe">
+              <input type="checkbox" name="rememberMe" id="rememberMe">
+              Husk meg
+            </label>
+
+            <label for="showPassword">
+              <input type="checkbox" name="showPassword" id="showPassword">
+              Vis passord
+            </label>
+          </div>
+
+          <button class="submitButton" id="submitButton">Send</button>
+         </form>
       </section>
     </main>
 
